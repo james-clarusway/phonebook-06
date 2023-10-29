@@ -14,7 +14,7 @@ services:
     networks:
       - clarusnet
   app-server:
-    image: 046402772087.dkr.ecr.us-east-1.amazonaws.com/phonebook:latest  # phonebook_image  # This line will be used for getting the ECR image name dynamically.
+    image: phonebook_image  # This line will be used for getting the ECR image name dynamically.
     deploy:
       replicas: 3
       update_config:
